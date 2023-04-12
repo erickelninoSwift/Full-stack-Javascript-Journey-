@@ -6,3 +6,21 @@ let number2 = number1 + 30;
 console.log(number1,number2 + 10);
 
 console.log("Comparison Operator");
+
+
+let price = 200;
+
+price > 300 ? console.log("Hello world") : console.log("Its not bigger");
+
+console.log(price == 200);
+console.log(price !== 200);
+console.log(price >= 200);
+console.log(price <= 200);
+console.log(price === 200);
+
+
+price !== 200 ? console.log("This number is not equal to 200") : console.log("Same or bigger");
+
+
+(price > 100 && price < 300) ? console.log("Number is between 100 and 300") : console.log("We dont even know ");
+
