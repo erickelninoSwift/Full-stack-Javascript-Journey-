@@ -24,3 +24,21 @@ price !== 200 ? console.log("This number is not equal to 200") : console.log("Sa
 
 (price > 100 && price < 300) ? console.log("Number is between 100 and 300") : console.log("We dont even know ");
 
+
+
+//  How to swap 2 numbers
+
+let apple = 10;
+let orange = 20;
+
+console.log(`Appple : ${apple}`);
+console.log(`Orange : ${orange}`);
+
+let temp;
+temp = apple;
+apple = orange;
+
+orange = temp;
+
+console.log(`Appple : ${apple}`);
+console.log(`Orange : ${orange}`);
