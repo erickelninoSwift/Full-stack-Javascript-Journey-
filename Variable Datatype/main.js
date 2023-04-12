@@ -60,3 +60,18 @@ function showLastName()
 
 
 showLastName();
+
+
+let myPerson = {
+    name: 'Eriik',
+    surname: 'Elnino',
+    homeAddres: {
+        street: 'Ceillers',
+        flatnumber: 45
+    },
+    friends: ["Jackpot","Anthony","Samuel"]
+};
+
+
+console.log(`Person Object : ${myPerson.homeAddres.street}`);
+console.log(`Person friends : ${myPerson.friends}`)
