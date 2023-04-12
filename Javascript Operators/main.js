@@ -42,3 +42,13 @@ orange = temp;
 
 console.log(`Appple : ${apple}`);
 console.log(`Orange : ${orange}`);
+
+
+let money = 50;
+console.log(money);
+money = 100;
+console.log(money);
+
+
+
+
