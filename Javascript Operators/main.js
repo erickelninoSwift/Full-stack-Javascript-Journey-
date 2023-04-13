@@ -18,15 +18,15 @@ console.log(price >= 200);
 console.log(price <= 200);
 console.log(price === 200);
 
-
 price !== 200 ? console.log("This number is not equal to 200") : console.log("Same or bigger");
 
 
 (price > 100 && price < 300) ? console.log("Number is between 100 and 300") : console.log("We dont even know ");
 
 
-
 //  How to swap 2 numbers
+
+
 
 let apple = 10;
 let orange = 20;
@@ -110,6 +110,14 @@ if(number % 4 === 0 && number % 5 === 0)
 (number % 5 === 0 && number % 10 === 0) ? console.log(`Number is Good`) : console.log(`Money is not everything`);
 
 (number % 10 === 0) ? console.log(`How are you doing ?`) : console.log(`Eriik was good`);
+
+
+let yollande = 100;
+
+console.log(yollande % 10 === 0 ? `Yollande is 100 years Old` : `Yollande is younger than 100 years`);
+
+
+console.log("Our grading System");
 
 
 
