@@ -23,3 +23,14 @@ let temp =  false;
 
  console.log(typeof temp);
  console.log(typeof newstring);
+
+
+ let elnino = "My name is eriik elnino Jackpot";
+
+ console.log(elnino.split(' '));
+
+ let newValue = elnino.split(' ');
+ console.log(newValue[0]);
+
+
+ console.log(elnino.slice(0,7))
