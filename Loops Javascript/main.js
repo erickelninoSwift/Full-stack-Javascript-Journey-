@@ -56,6 +56,6 @@ for(let i = 0 ; i <= 10 ; i ++)
     console.log(`====================`)
     for(let e = 0;e <=10;e ++)
     {
-        console.log(`Number : ${e}`);
+        console.log(`Number : ${i} ${e}`);
     }
 }
