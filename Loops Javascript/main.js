@@ -36,7 +36,15 @@ let elninoNumbers = [10,20,40,10,23,11,22];
 
 for(let index of elninoNumbers)
 {
-    console.log(`Number is : ${
-        index
-    }`);
+    console.log(`Number is : ${index}`);
+}
+
+for(let index = 0; index <= 100;index ++)
+{
+      if(index >= 50 && index <=60)
+      {
+        break;
+      }
+
+      console.log(index);
 }
