@@ -39,12 +39,23 @@ for(let index of elninoNumbers)
     console.log(`Number is : ${index}`);
 }
 
-for(let index = 0; index <= 100;index ++)
-{
-      if(index >= 50 && index <=60)
-      {
-        break;
-      }
+// for(let index = 0; index <= 100;index ++)
+// {
+//       if(index >= 50 && index <=60)
+//       {
+//         break;
+//       }
 
-      console.log(index);
+//       console.log(index);
+// }
+
+
+for(let i = 0 ; i <= 10 ; i ++)
+{
+    console.log(`Stage : ${i}`);
+    console.log(`====================`)
+    for(let e = 0;e <=10;e ++)
+    {
+        console.log(`Number : ${e}`);
+    }
 }
