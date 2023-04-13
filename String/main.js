@@ -14,3 +14,12 @@ console.log(question.includes('is'));
 
 console.log(question.search('eriik'));
 console.log(question.indexOf('name'));
+console.log(question.lastIndexOf('is'));
+console.log(question.toLowerCase());
+
+let temp =  false;
+ let newstring = temp.toString();
+ console.log(newstring);
+
+ console.log(typeof temp);
+ console.log(typeof newstring);
