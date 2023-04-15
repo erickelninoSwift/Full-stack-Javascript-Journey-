@@ -32,5 +32,4 @@ let temp =  false;
  let newValue = elnino.split(' ');
  console.log(newValue[0]);
 
-
  console.log(elnino.slice(0,7))
