@@ -1,7 +1,4 @@
-
-
-
-let companies = `[
+[
     {
         "name" : "big corporate ",
         "numberOfEmployee" : 10000,
@@ -20,10 +17,4 @@ let companies = `[
         "ceo": null,
         "rating" : 4.4
     }
-]`
-
-console.log(JSON.parse(companies)[0].name);
-
-// companies.forEach(company =>{
-//     console.log(company);
-// });
+]
