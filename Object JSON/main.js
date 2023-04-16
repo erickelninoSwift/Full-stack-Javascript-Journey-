@@ -12,13 +12,32 @@ console.log(erick());
 console.log(x);
 erick();
 
-let user = {
+const user = {
     name:'erick',
     surname: 'elnino',
-    favcolor:['red,blue,yellow']
+    favcolor:['red,blue,yellow'],
+    greetings : function()
+    {
+        return `Hello my name is ${this.name}`;
+    }
 };
 
-user.email = "erick@yahoo.com";
 
-user.name ="jackpot";
-console.log(user);
+console.log(`Movie night  : ${user.greetings()}`);
+
+
+//traversing object 
+
+
+
+const company = {
+    name:'erick',
+    surname: 'elnino',
+    favcolor:['red,blue,yellow'],
+    greetings : function()
+    {
+        return `Hello my name is ${this.name}`;
+    }
+};
+
+
