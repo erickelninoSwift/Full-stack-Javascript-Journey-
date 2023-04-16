@@ -23,7 +23,7 @@ const user = {
 };
 
 
-console.log(`Movie night  : ${user.greetings()}`);
+// console.log(`Movie night  : ${user.greetings()}`);
 
 
 //traversing object 
@@ -33,11 +33,29 @@ console.log(`Movie night  : ${user.greetings()}`);
 const company = {
     name:'erick',
     surname: 'elnino',
-    favcolor:['red,blue,yellow'],
+    favcolor:['red','blue','yellow'],
     greetings : function()
     {
         return `Hello my name is ${this.name}`;
     }
 };
 
+
+// for(let key in company)
+// {   
+//     console.log(`${key} : ${company[key]}`);
+// }
+const numberitems = company.favcolor.length;
+
+console.log(`Number of items : ${numberitems}`);
+for(let index of company.favcolor)
+{
+    console.log(index);
+}
+
+const itemsKey = Object.keys(company);
+
+itemsKey.forEach(items =>{
+    console.log(items);
+});
 
