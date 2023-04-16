@@ -133,7 +133,7 @@ favcolor.forEach(color =>{
 
 // Cloning an Object 
 
-const currentUser = {
+let currentUser = {
     name:'erick',
     surname: 'elnino',
     favcolor:['red,blue,yellow'],
@@ -146,3 +146,22 @@ const currentUser = {
 const copiedUser = Object.assign({},currentUser);
 
 console.log(`Objct created  : ${copiedUser.greetings()}`);
+
+
+// Math Object 
+
+let randomNumber = Math.floor((Math.random() * 10) + 1);
+
+console.log(randomNumber);
+
+// JSON DATA OBJECT
+
+const myjsondata = JSON.stringify(currentUser);
+
+
+
+console.log(myjsondata);
+const jsonresutl =  JSON.parse(myjsondata);
+
+console.log(jsonresutl);
+
