@@ -116,3 +116,17 @@ const income =
     bookAuthor : 'ElniDiego simeone'
    }
 }
+
+
+console.log(income);
+
+const {name,surname,favcolor} = income;
+
+const {bookname,bookAuthor} = income.favbook;
+
+console.log(`The book name : ${bookname}`);
+
+
+favcolor.forEach(color =>{
+   console.log(color); 
+});
