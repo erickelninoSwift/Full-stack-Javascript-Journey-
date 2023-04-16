@@ -130,3 +130,19 @@ console.log(`The book name : ${bookname}`);
 favcolor.forEach(color =>{
    console.log(color); 
 });
+
+// Cloning an Object 
+
+const currentUser = {
+    name:'erick',
+    surname: 'elnino',
+    favcolor:['red,blue,yellow'],
+    greetings : function()
+    {
+        return `Hello my name is ${this.name}`;
+    }
+};
+
+const copiedUser = Object.assign({},currentUser);
+
+console.log(`Objct created  : ${copiedUser.greetings()}`);
