@@ -67,7 +67,6 @@ const salary =
    elnino: 10050,
    anthony: 8100,
    samuel: 8100,
-   yoky: 1100,
    emanuella: 3100,
 }
 
@@ -77,7 +76,43 @@ let sum = 0;
 for(let index in salary)
 {
    sum += salary[index];
-   console.log(`Cost : ${salary[index]}`);
+   console.log(`${index} : ${salary[index]}`);
+   
 }
 
 console.log(`total sum : ${sum}`);
+
+let total = 0;
+
+let sumnubers = Object.values(salary);
+
+sumnubers.forEach(number =>{
+    total += number;
+});
+
+console.log(total);
+
+
+// Object distracturing 
+
+
+const income = 
+{
+   erick: 3000,
+   jackpot: 1000,
+   elnino: 10050,
+   anthony: 8100,
+   samuel: 8100,
+   emanuella: 3100,
+   name:'erick',
+   surname: 'elnino',
+   favcolor:['red,blue,yellow'],
+   greetings : function()
+   {
+       return `Hello my name is ${this.name}`;
+   },
+   favbook : {
+    bookname: 'harry potter',
+    bookAuthor : 'ElniDiego simeone'
+   }
+}
