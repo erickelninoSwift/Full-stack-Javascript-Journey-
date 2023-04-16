@@ -45,3 +45,6 @@ let newName = 'Hello my friend \n "It\'s Nice to see you " \n How are you ?';
 
 console.log(newName);
 
+// String immutablelity
+
+let myMessage = 'I am doing very Well';
