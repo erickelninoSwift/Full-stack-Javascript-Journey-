@@ -32,4 +32,16 @@ let temp =  false;
  let newValue = elnino.split(' ');
  console.log(newValue[0]);
 
- console.log(elnino.slice(0,7))
+ console.log(elnino.slice(0,7));
+
+ console.log(`Here is my new string : ${elnino.slice(-10,10)}`);
+
+//  substring
+
+console.log(elnino.substring(0,10));
+
+
+let newName = 'Hello my friend \n "It\'s Nice to see you " \n How are you ?';
+
+console.log(newName);
+
