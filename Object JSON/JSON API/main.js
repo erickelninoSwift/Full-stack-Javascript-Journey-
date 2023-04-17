@@ -57,11 +57,39 @@ let schoolManagement = [
 //     console.log(company);
 // });
 
+let item = "";
+
 fetch('user.json').then(response =>{
     
    return response.json();
 
 }).then(datareceived =>{
 
-    console.log(datareceived);
-})
+    datareceived.forEach(element => {
+    //    item += `<li> ${element.name} : ${element.numberOfEmployee}</li>`;
+    //    document.querySelector("ul").innerHTML = item;
+    });
+});
+
+// console.log(JSON.stringify(schoolManagement));
+
+const userManagement = JSON.stringify(schoolManagement);
+console.log(userManagement);
+
+const jsondata = JSON.parse(userManagement);
+console.log(jsondata);
+
+
+let url = 'https://jsonplaceholder.typicode.com/todos/';
+
+const listTodo = fetch(url);
+listTodo.then(response =>{
+    return response.json();
+}).then(jsonData =>{
+
+    jsonData.forEach( user =>{
+        console.log(user);
+    });
+    item += `<li> ${jsonData.title} </li>`;
+    document.querySelector("ul").innerHTML = item;
+});
