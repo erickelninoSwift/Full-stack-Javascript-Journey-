@@ -62,3 +62,22 @@ const pultiply = (number1,number2,number3) =>{
 
 
 console.log(pultiply(20,20,20));
+
+
+
+
+function calc(...args)
+{
+    let sum = 0;
+
+    args.forEach(number =>{
+        sum += number;
+    });
+
+    return sum;
+}
+
+
+const numberall = calc(50.50,90);
+
+console.log(`Total sum is  : ${numberall}`);
