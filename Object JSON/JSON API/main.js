@@ -57,5 +57,11 @@ let schoolManagement = [
 //     console.log(company);
 // });
 
+fetch('user.json').then(response =>{
+    
+   return response.json();
 
-console.log(`The new App API ${schoolManagement[0].numberOfEmployee}`);
+}).then(datareceived =>{
+
+    console.log(datareceived);
+})
