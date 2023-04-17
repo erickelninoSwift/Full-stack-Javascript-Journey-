@@ -49,3 +49,16 @@ function nameutils(name)
 const currentfucntion = (num1,num2) => num1 + num2 ;
 
 console.log(currentfucntion(23,34));
+
+
+// Rest parameter
+
+console.log("Rest parameter");
+
+const pultiply = (number1,number2,number3) =>{
+
+    return number1 * number2 * number3;
+};
+
+
+console.log(pultiply(20,20,20));
