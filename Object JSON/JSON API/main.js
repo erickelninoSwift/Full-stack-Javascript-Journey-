@@ -80,16 +80,27 @@ const jsondata = JSON.parse(userManagement);
 console.log(jsondata);
 
 
-let url = 'https://jsonplaceholder.typicode.com/todos/';
+// let url = 'https://jsonplaceholder.typicode.com/todos/';
 
-const listTodo = fetch(url);
-listTodo.then(response =>{
-    return response.json();
-}).then(jsonData =>{
+// const listTodo = fetch(url);
+// listTodo.then(response =>{
+//     return response.json();
+// }).then(jsonData =>{
 
-    jsonData.forEach( user =>{
-        console.log(user);
-    });
-    item += `<li> ${jsonData.title} </li>`;
-    document.querySelector("ul").innerHTML = item;
+//     jsonData.forEach( user =>{
+//         item += `<li> ${user.title} </li>`;
+//     });
+   
+//     document.querySelector("ul").innerHTML = item;
+// });
+
+
+const weatherCall = fetch('https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=832f8a482ce5445aa4d5ad46631e1678');
+
+weatherCall.then(weather =>{
+    return weather.json();
+})
+
+.then(jsonData =>{
+   alert(`Country : ${jsonData.timezone}`)
 });
