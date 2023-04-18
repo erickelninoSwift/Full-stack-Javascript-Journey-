@@ -41,3 +41,22 @@ const result = doctors.find(doctor =>{
 });
 
 console.log(result);
+
+doctors.forEach((index,data) =>{
+
+    console.log(index.name,data);
+});
+
+
+// Sorting and manipulation
+
+const number = [23,4,55,67,88,8,23,12];
+
+number.forEach( num =>{
+    console.log(num);
+});
+
+number.sort();
+number.reverse();
+
+console.log(number);
