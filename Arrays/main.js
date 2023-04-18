@@ -24,3 +24,20 @@ if(friends.includes('kazii'))
 {
     console.log("no!!!");
 }
+
+console.log(friends.indexOf("eriik") - 1);
+
+
+const doctors = [
+    {name: 'eriik', age: 89},
+    {name: 'jonny', age: 55},
+    {name: 'yoky', age: 80},
+    {name: 'jackpot', age: 33},
+];
+
+
+const result = doctors.find(doctor =>{
+    return doctor.name === 'jackpot';
+});
+
+console.log(result);
