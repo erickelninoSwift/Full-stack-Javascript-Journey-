@@ -135,3 +135,10 @@ const jackpot = [2,3,4,5];
 const arrayjoined = [...erickelnino, ...jackpot];
 
 console.log(arrayjoined.sort());
+
+
+const messgae = [34,44,1,21,345,25,90];
+
+let myessage2 = "how are you doing today ?";
+
+console.log(myessage2.split(" "));
