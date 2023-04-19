@@ -142,3 +142,43 @@ const messgae = [34,44,1,21,345,25,90];
 let myessage2 = "how are you doing today ?";
 
 console.log(myessage2.split(" "));
+
+
+const numbersArray = [10,11,23,45,67,8];
+
+const arraypower = numbersArray.map(num =>{
+
+    return num * 10;
+});
+
+console.log(arraypower);
+
+numbersArray.forEach(number =>{
+    console.log(number * 10);
+});
+
+
+let elnino = [];
+
+numbersArray.forEach(num =>{
+    elnino.push(num * 10);
+});
+
+
+console.log(`Numbers : ${elnino.reverse()}`);
+
+let doctoselnino = [
+    {name: "eriik" , age: 30},
+    {name: "elnino" , age: 34},
+    {name: "cholo" , age: 50}
+];
+
+
+const currentdoctor = doctoselnino.map(user =>{
+     if(user.age > 30)
+     {
+        return user;
+     }
+});
+
+console.log(currentdoctor);
