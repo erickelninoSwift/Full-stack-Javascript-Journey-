@@ -112,3 +112,11 @@ const nuber22 = [4,5,6];
 const newArrayData = number12.concat(nuber22);
 
 console.log(newArrayData);
+
+
+
+
+//  Spread operator
+
+const eriikNumbers = [1,2,3,4,5,6,7,8,9];
+console.log(eriikNumbers);
