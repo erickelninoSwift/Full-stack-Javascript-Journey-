@@ -52,6 +52,12 @@ doctors.forEach((index,data) =>{
 
 const number = [23,4,55,67,88,8,23,12];
 
+number.sort((a,b) =>{
+    return a - b;
+});
+
+console.log(`Data sorted : ${number}`);
+
 number.forEach( num =>{
     console.log(num);
 });
@@ -59,4 +65,50 @@ number.forEach( num =>{
 number.sort();
 number.reverse();
 
+const newNumbers = parseInt(number);
+
 console.log(number);
+
+console.log(`new array : ${newNumbers}`);
+let myusers = [
+    {name: 'eriik', age: 70},
+    {name: 'jezzy', age: 40},
+    {name: 'gold', age: 45}
+];
+
+
+myusers.sort((user1,user2) =>{
+
+    return user1.age - user2.age
+});
+
+console.log(myusers);
+
+
+function sortdata(a,b)
+{
+    return a - b;
+}
+
+console.log(`Decision : ${sortdata(12,9)}`);
+
+
+const numberstoSort = [1,4,9,56,7,8,23];
+
+
+const data = numberstoSort.every(num =>{
+    return num > 0;
+});
+
+console.log(data);
+
+
+//  concat method 
+
+const number12 = [1,2,3];
+
+const nuber22 = [4,5,6];
+
+const newArrayData = number12.concat(nuber22);
+
+console.log(newArrayData);
