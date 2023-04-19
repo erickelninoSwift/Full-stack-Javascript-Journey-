@@ -119,4 +119,19 @@ console.log(newArrayData);
 //  Spread operator
 
 const eriikNumbers = [1,2,3,4,5,6,7,8,9];
+console.log(...eriikNumbers);
+console.log(eriikNumbers[4]);
 console.log(eriikNumbers);
+
+const cloneArray = [...eriikNumbers];
+
+console.log(cloneArray.reverse());
+
+
+const erickelnino = [1,2,3];
+const jackpot = [2,3,4,5];
+
+
+const arrayjoined = [...erickelnino, ...jackpot];
+
+console.log(arrayjoined.sort());
