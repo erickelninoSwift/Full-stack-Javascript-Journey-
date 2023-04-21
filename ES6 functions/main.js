@@ -30,3 +30,23 @@ const erickelnino = (user) =>{
 
 
 erickelnino(user);
+
+
+// Data structure Set
+
+const set = new Set();
+
+set.add(100)
+set.add(300);
+set.add(900);
+set.add(200);
+set.add(200);
+
+
+set.delete(900);
+console.log(set);
+console.log(set.size);
+
+set.forEach(numberset =>{
+    console.log(numberset);
+});
