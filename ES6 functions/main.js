@@ -97,5 +97,21 @@ if(yokozuna.has(cholo222))
     console.log(` My friend its faulse`);
 }
 
-yokozuna.has(cholo222) ? console.log('my friend its true ooooo') : console.log('my freind its false oooooo');
+// yokozuna.has(cholo222) ? console.log(`true my friend ${yokozuna.get(cholo222)}`) : console.log('my freind its false oooooo ');
 
+
+const walid = new WeakMap();
+const mibilu = {
+    name: 'yollande'
+}
+walid.set(mibilu,'She is 45');
+
+console.log(walid.get(mibilu));
+
+
+// import modules
+
+
+import numberAdd from './function.js'
+
+console.log(`The total sum is : ${numberAdd(30,45)}`);
