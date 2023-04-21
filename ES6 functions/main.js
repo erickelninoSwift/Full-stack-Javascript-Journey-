@@ -50,3 +50,52 @@ console.log(set.size);
 set.forEach(numberset =>{
     console.log(numberset);
 });
+
+
+set.clear();
+console.log(set);
+
+// Data Structure Map
+
+
+let map = new Map();
+
+map.set('Name','Eriik');
+map.set('Score',100);
+
+console.log(map);
+
+for(let x of map)
+{
+    console.log(x[1]);
+}
+
+console.log(`type : ${typeof map}`);
+
+
+// Weak set Weak Map
+const yokozuna = new WeakSet();
+
+const yoku = {
+    name: 'elnino',
+    surname: 'Jackpot'
+};
+const cholo222 = {
+    name: 'mojalefa',
+    age: 78
+}
+
+yokozuna.add(yoku);
+yokozuna.add(cholo222);
+
+console.log(yokozuna);
+if(yokozuna.has(cholo222))
+{
+    console.log(`My friend its true`);
+}else
+{
+    console.log(` My friend its faulse`);
+}
+
+yokozuna.has(cholo222) ? console.log('my friend its true ooooo') : console.log('my freind its false oooooo');
+
