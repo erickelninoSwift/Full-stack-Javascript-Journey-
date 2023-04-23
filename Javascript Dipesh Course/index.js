@@ -133,3 +133,51 @@ console.log(newjsonObject);
 const convertedJSOn = JSON.parse(newjsonObject);
 
 console.log(convertedJSOn);
+
+for(let i in convertedJSOn)
+{
+    console.log((i) +": "+ convertedJSOn[i]);
+}
+
+
+//  High order functions
+
+let newEmployee = [
+
+    {
+        id: 101,
+        name1: 'eriik',
+        lastName: 'elnino',
+        age: 25,
+        address: {
+            city: 'johannesburg',
+            country : 'South africa'
+        }
+    },
+
+    {
+        id: 101,
+        name1: 'samuel',
+        lastName: 'elnino',
+        age: 25,
+        address: {
+            city: 'johannesburg',
+            country : 'South africa'
+        }
+    },
+    {
+        id: 101,
+        name1: 'Anthony',
+        lastName: 'elnino',
+        age: 25,
+        address: {
+            city: 'johannesburg',
+            country : 'South africa'
+        }
+    }
+
+]
+
+newEmployee.forEach(user =>{
+    console.log(user);
+});
