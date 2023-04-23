@@ -94,3 +94,23 @@ numbers.push("Erickelniono");
 
 
 console.log(numbers);
+
+console.log(Array.isArray(numbers));
+
+
+// Objects
+
+let employee = {
+    id: 101,
+    name: 'eriik',
+    lastName: 'elnino',
+    age: 25,
+    address: {
+        city: 'johannesburg',
+        country : 'South africa'
+    },
+    skills: ["HTML","CSS","JAVASCRIPT"]
+}
+
+console.log(typeof employee);
+console.log(employee);
