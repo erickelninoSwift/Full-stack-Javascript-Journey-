@@ -145,7 +145,7 @@ for(let i in convertedJSOn)
 let newEmployee = [
 
     {
-        id: 101,
+        id: 22434434341,
         name1: 'eriik',
         lastName: 'elnino',
         age: 25,
@@ -156,20 +156,20 @@ let newEmployee = [
     },
 
     {
-        id: 101,
+        id: 455452342,
         name1: 'samuel',
         lastName: 'elnino',
-        age: 25,
+        age: 45,
         address: {
             city: 'johannesburg',
             country : 'South africa'
         }
     },
     {
-        id: 101,
+        id: 143545,
         name1: 'Anthony',
         lastName: 'elnino',
-        age: 25,
+        age:5,
         address: {
             city: 'johannesburg',
             country : 'South africa'
@@ -178,6 +178,64 @@ let newEmployee = [
 
 ]
 
+
+const jsonApplication = JSON.stringify(newEmployee);
+
+console.log(jsonApplication);
+
 newEmployee.forEach(user =>{
     console.log(user);
 });
+
+const surnames = newEmployee.map(user =>{
+    return user.name1;
+});
+
+
+console.log(surnames);
+
+const userID = newEmployee.filter(user =>{
+    return user.age > 25;
+}).map(currentuser =>{
+    return currentuser.name1;
+});
+
+
+
+console.log(userID);
+
+
+let a = 10;
+
+if(a === "10")
+{
+    console.log("True")
+}else
+{
+    console.log("False");
+}
+
+console.log(typeof "10");
+
+
+
+//  function
+
+function Showtext()
+{
+    console.log("I am just trying to render a fucntion");
+
+}
+
+Showtext();
+
+const ericktext = () =>{
+    return 'how are you doing today my friend ? ';
+}
+
+console.log(ericktext());
+
+
+const yoyo = () => console.log("I am doing tvery well");
+
+yoyo();
