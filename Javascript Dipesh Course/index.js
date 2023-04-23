@@ -254,7 +254,30 @@ function Mobile(brand,price,launcheDate)
 
 const samsunGs2 = new Mobile("Samsung",2000,"12/12/2005");
 Mobile.prototype.ram = "4GB";
+
 Mobile.prototype.getFullName = () =>{
+
     return `The phone you bought is a ${samsunGs2.brand}`;
 }
 console.log(samsunGs2.getFullName());
+
+
+function getyear()
+{
+    let fullyear = new Date();
+
+    return fullyear.getFullYear();
+}
+
+console.log( getyear() >= 2022 ? `This year is good happy ${getyear()}` : 'We dont know what to expect');
+
+
+// Window DOM
+
+
+console.log(window.location.host);
+
+
+const mydoc = document.getElementById("contact");
+
+console.log(mydoc);
