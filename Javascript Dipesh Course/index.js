@@ -102,15 +102,34 @@ console.log(Array.isArray(numbers));
 
 let employee = {
     id: 101,
-    name: 'eriik',
+    name1: 'eriik',
     lastName: 'elnino',
     age: 25,
     address: {
         city: 'johannesburg',
         country : 'South africa'
     },
-    skills: ["HTML","CSS","JAVASCRIPT"]
+    skills: ["HTML","CSS","JAVASCRIPT"],
+
+    fullName: function()
+    {
+        return `Hello how are you doing ${this.name1} i heard you are ${this.age} Years Old`;
+    }
 }
 
 console.log(typeof employee);
-console.log(employee);
+console.log(employee.address.city);
+
+const {name1,id,address,fullName} = employee;
+
+console.log(address);
+
+console.log(employee.fullName());
+
+const newjsonObject = JSON.stringify(employee);
+
+console.log(newjsonObject);
+
+const convertedJSOn = JSON.parse(newjsonObject);
+
+console.log(convertedJSOn);
