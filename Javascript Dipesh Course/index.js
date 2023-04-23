@@ -239,3 +239,22 @@ console.log(ericktext());
 const yoyo = () => console.log("I am doing tvery well");
 
 yoyo();
+
+
+//  Contructor Object
+
+
+function Mobile(brand,price,launcheDate)
+{
+    this.brand = brand;
+    this.price = price;
+    this.launcheDate = launcheDate;
+
+}
+
+const samsunGs2 = new Mobile("Samsung",2000,"12/12/2005");
+Mobile.prototype.ram = "4GB";
+Mobile.prototype.getFullName = () =>{
+    return `The phone you bought is a ${samsunGs2.brand}`;
+}
+console.log(samsunGs2.getFullName());
