@@ -62,7 +62,7 @@ console.log(databases[0]);
 
 console.log(databases.length);
 
-let numbers = [12,34,54,44,23,55,66,77,2,09];
+let numbers = [12,34,54,44,23,55,66,77,2];
 
 numbers.sort((a,b) =>{
     return a - b 
@@ -80,3 +80,17 @@ console.log(numberscheck(12,25));
 
 
 console.log("Hello world");
+
+
+numbers.forEach(number =>{
+    console.log(number);
+});
+
+
+numbers.pop();
+console.log(numbers);
+
+numbers.push("Erickelniono");
+
+
+console.log(numbers);
