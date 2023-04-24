@@ -281,3 +281,20 @@ console.log(window.location.host);
 const mydoc = document.getElementById("contact");
 
 console.log(mydoc);
+
+
+
+const h2 = document.querySelector("h2");
+console.log(h2);
+h2.innerText = "Contact list"
+h2.style.color= "red";
+h2.innerHTML = "<h1><b>Jackpot</b></h1>";
+h2.style.color = "Blue";
+h2.style.fontSize = "20px";
+
+
+const myButton = document.querySelector('.erickelnino');
+let cholo = 0 ;
+myButton.addEventListener('click',(e) =>{
+    console.log(cholo++);
+});

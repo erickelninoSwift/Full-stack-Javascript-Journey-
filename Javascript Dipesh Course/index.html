@@ -8,32 +8,27 @@
     <link rel="stylesheet" href="../Javascript Dipesh Course/style.css">
 </head>
 <body>
-    <main><h1>Javasdcript DOM</h1></main>
-    <div class="container">  
-        <form id="contact" action="" method="post">
-          <h3>Colorlib Contact Form</h3>
-          <h4>Contact us for custom quote</h4>
-          <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-          </fieldset>
-          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
-        </form>
-      </div>
+    <body>
+        <div class="container">
+            <h2>TODO LIST</h2>
+            <h3>Add Item</h3>
+            <p>
+                <input id="new-task" type="text"><button class="erickelnino">Add</button>
+            </p>
+    
+            <h3>Todo</h3>
+            <ul id="incomplete-tasks">
+                <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                <li><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            </ul>
+    
+            <h3>Completed</h3>
+            <ul id="completed-tasks">
+                <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            </ul>
+        </div>
+    
+    </body>
     <script src="../Javascript Dipesh Course/index.js"></script>
 </body>
 </html>
