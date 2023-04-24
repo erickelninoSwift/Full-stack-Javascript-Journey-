@@ -49,6 +49,11 @@ class hourse
     getResidents = () =>{
         return this.residents;
     }
+
+    addResident = (residents) =>{
+
+        this.residents.push(residents);
+    }
 }
 
 const Erick  = new Person("Eriik",32);
@@ -62,3 +67,29 @@ console.log(Anthony);
 
 console.log(kyalamiHills);
 console.log(SnaridgeVilage);
+
+let Yollande = new Person("Yollande", 89);
+SnaridgeVilage.addResident(Yollande);
+console.log(SnaridgeVilage);
+
+class Programmer extends Person
+{
+    constructor(name,age,company, salary,language)
+    {
+        super(name,age);
+        this.company = company;
+        this.salary = salary;
+        this.language = language;
+    }
+
+    sayHi  = () =>{
+        return `Hello , I am a Programmer and i work for ${this.company} \n My salary is ${this.salary} and I use ${this.language} and my name is ${this.name} and I am ${this.age} years Old`;
+
+    }
+}
+
+let javaDeveloper = new Programmer("Eriik Elnino",25,"Netflix",120000,"NodeJS/NestJS/MongoDB");
+
+console.log(javaDeveloper.sayHi());
+
+
