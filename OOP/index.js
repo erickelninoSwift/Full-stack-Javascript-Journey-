@@ -72,6 +72,8 @@ let Yollande = new Person("Yollande", 89);
 SnaridgeVilage.addResident(Yollande);
 console.log(SnaridgeVilage);
 
+
+
 class Programmer extends Person
 {
     constructor(name,age,company, salary,language)
