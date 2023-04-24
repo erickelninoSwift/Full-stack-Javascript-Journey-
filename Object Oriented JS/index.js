@@ -1,32 +1,26 @@
 console.log("Hello welcome to OOP in Javascript");
 
-const user = {
-    name: 'eriik',
-    age: 40,
-    walk: function()
-    {
-        console.log("i am starting to walk")
-    },
+function getuserData(name,age)
+{
+    const user = {
+        name: name,
+        age: age,
+        walk: function()
+        {
+            console.log(`My name is ${name} and I am ${age} years old`)
+        },
+    }
+    return user;
 }
 
 
-const user1 = {
-    name: 'jackpot',
-    age: 56,
-    swim: function()
-    {
-        console.log("i am starting to swim")
-    },
-}
+
+getuserData().walk();
 
 
-const user2 = {
-    name: 'elnino',
-    age: 100,
-    dance: function()
-    {
-        console.log("i am starting to Dance")
-    },
-}
+const user1 = getuserData("Eriik",89);
 
-console.log(user,user1,user2)
+
+const user2 = getuserData("Yollande",65);
+
+console.log(user1,user2);
