@@ -43,8 +43,21 @@ function sport(passport,callback)
 
 
 sport(213070797,(mysentence) =>{
-
-
     console.log(mysentence);
 })
 
+let number = 300;
+
+const mypromise = new Promise((resolve,reject) =>{
+
+    setTimeout(() =>{
+        if(number >= 200)
+        {
+            resolve("Success")
+        }else
+        {
+            reject("Error found : number is below average");
+        }
+    },3000);
+
+});
