@@ -1,5 +1,6 @@
 console.log("Classes");
 
+import listBinding from "./listbinding.js";
 class rectangle
 {
     constructor(_height, _width, _color)
@@ -133,5 +134,69 @@ const student1 = new Student("Yollande","Kasonga",60,"BioTech",12000);
 console.log(student1);
 student1.code();
 
+//  Polymorphism
 
 
+
+class Animal
+{
+    constructor( _name)
+    {
+        this.name = _name;
+    }
+
+    makeSound()
+    {
+        console.log("Make woo woo sound ");
+    }
+}
+
+class Dog extends Animal
+{
+    constructor(_name,breed,color)
+    {
+        super(_name);
+        this.breed = breed;
+        this.color = color;
+
+    }
+
+
+    makeSound()
+    {
+
+        super.makeSound();
+        console.log("Miawuuuuuuuu");
+
+    }
+}
+
+
+
+
+const cat = new Animal("Minu");
+const mynewDog = new Dog("Betoven","German","Black")
+
+cat.makeSound();
+console.log(mynewDog);
+
+mynewDog.makeSound();
+
+
+//  Class in practice
+
+const ul  = document.getElementById('myList');
+
+ const newList = new listBinding(ul);
+
+const enterName = prompt("Please enter name: ")
+
+
+if(enterName.trim().length !== 0)
+{
+    newList.add(enterName)
+    newList.update();
+}else
+{
+    console.log('This field is not supposed to be empty');
+}
