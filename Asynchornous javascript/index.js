@@ -31,33 +31,129 @@
  
 
 
-function sport(passport,callback)
-{
-    setTimeout(() => {
+// function sport(passport,callback)
+// {
+//     setTimeout(() => {
 
-        const nameofUser = `Userid : ${passport} can travel to any country`; 
+//         const nameofUser = `Userid : ${passport} can travel to any country`; 
         
-        callback(nameofUser);
-    },3000);
-}
+//         callback(nameofUser);
+//     },3000);
+// }
 
 
-sport(213070797,(mysentence) =>{
-    console.log(mysentence);
-})
+// sport(213070797,(mysentence) =>{
+//     console.log(mysentence);
+// })
 
-let number = 300;
+// let number = 50;
 
-const mypromise = new Promise((resolve,reject) =>{
+// const mypromise = new Promise((resolve,reject) =>{
 
-    setTimeout(() =>{
-        if(number >= 200)
-        {
-            resolve("Success")
-        }else
-        {
-            reject("Error found : number is below average");
-        }
-    },3000);
+//     setTimeout(() =>{
+//         if(number >= 200)
+//         {
+//             resolve("Success")
+//         }else
+//         {
+//             reject(new Error('Error was found'));
+//         }
+//     },3000);
+
+// });
+
+
+// mypromise.then(value =>{
+//     return `The connection status : ${value}`
+// })
+
+// .then(value =>{
+
+//     console.log(value);
+
+// })
+
+// .catch(err =>{
+//    console.warn(err);
+// });
+
+// const promise1 = new Promise((resolve,reject) =>{
+
+//     setTimeout(() =>{
+
+//         resolve("Hello Erick How you doing todat");
+//     },2000);
+
+// });
+
+// const promise2 = new Promise((resolve,reject) =>{
+
+//     setTimeout(() =>{
+
+//         resolve("I am doing very well thanks for asking ");
+//     },3000);
+
+// });
+
+
+// Promise.all([promise1,promise2]).then(data =>{
+      
+//      setTimeout(results =>{
+
+//         console.log("I am doing very well my fiend");
+//      },8000);
+    
+// });
+
+
+// const currentPromise1 = new Promise((resolve,reject) =>{
+
+//     setTimeout(() =>{
+
+//        resolve("Hello world");
+
+//     },2000);
+
+// });
+
+// const currentPromise2 = new Promise((resolve,reject) =>{
+
+//     setTimeout(() =>{
+
+//         resolve("How are you doing today")
+
+//     },4000);
+
+// });
+
+// Promise.all([currentPromise1,currentPromise2]).then((results) =>{
+
+//     results.forEach(data =>{
+//         setTimeout(() =>{
+//             console.log(data);
+//         },2000);
+//     });
+// })
+// .catch(err =>{
+
+//     console.warn(`The error found is : ${err}`);
+// });
+
+
+
+// API calls 
+
+
+const getalldata = fetch('https://api.github.com/users/andrew');
+
+
+getalldata.then(result =>{
+
+    console.log(result);
+
+}).catch(err =>{
+
+
+    console.warn(`There was an error found here : ${err}`);
 
 });
