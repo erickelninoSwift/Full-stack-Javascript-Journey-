@@ -144,16 +144,61 @@
 // API calls 
 
 
-const getalldata = fetch('https://api.github.com/users/andrew');
+// const getalldata = fetch('https://api.github.com/users/andrew');
 
 
-getalldata.then(result =>{
+// getalldata.then(result =>{
+
+//   return result.json();
+
+// }).then(dataresult =>{
+
+//     console.log(dataresult);
+
+// }).catch(err =>{
+
+
+//     console.warn(`There was an error found here : ${err}`);
+
+// });
+
+
+
+
+async function getDatagithub()
+{
+    const newlink = await fetch('https://api.github.com/users/andrew');
+
+    const profile = await newlink.json();
+
+     console.log(profile);
+
+}
+
+getDatagithub();
+
+
+const myonwPromis = new Promise((resolve, reject) =>{
+
+    const getAlldataNow = fetch('https://cat-fact.herokuapp.com/facts');
+
+    const jsondata = getAlldataNow.json();
+
+    setTimeout(() =>{
+
+       resolve(jsondata);
+       
+
+    },2000);
+
+});
+
+myonwPromis.then(result =>{
 
     console.log(result);
+})
+.catch(erro =>{
 
-}).catch(err =>{
-
-
-    console.warn(`There was an error found here : ${err}`);
+console.warn(erro);
 
 });
