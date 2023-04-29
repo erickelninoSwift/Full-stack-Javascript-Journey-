@@ -86,82 +86,133 @@
 
 // });
 
-console.log("Finish watching videos");
+// console.log("Finish watching videos");
 
 
 
-let numberStudent = 50;
+// let numberStudent = 50;
 
-const myPromise = new Promise((resolve,reject) =>{
+// const myPromise = new Promise((resolve,reject) =>{
 
-    setTimeout(() =>{
+//     setTimeout(() =>{
 
-        if(numberStudent >= 100)
-        {
-            resolve(`Number of student is good : ${numberStudent}`);
-        }else
-        {
-            reject(new Error('My freind this is an error'));
-        }
+//         if(numberStudent >= 100)
+//         {
+//             resolve(`Number of student is good : ${numberStudent}`);
+//         }else
+//         {
+//             reject(new Error('My freind this is an error'));
+//         }
 
-    },3000);
+//     },3000);
 
-});
+// });
 
-myPromise.then(result =>{
+// myPromise.then(result =>{
 
-    console.log(result);
+//     console.log(result);
 
-})
+// })
 
-.catch(err =>{
+// .catch(err =>{
   
-    console.warn(`Error found : ${err}`);
+//     console.warn(`Error found : ${err}`);
 
-})
+// })
 
-.finally(() =>{
+// .finally(() =>{
 
-    setTimeout(() =>{
+//     setTimeout(() =>{
 
-        console.log("The end.......");
+//         console.log("The end.......");
 
-    },3000);
-});
-
-
-
-function getAlluser(userEmail,userpassword)
-{
-
-    return new Promise((resolve,reject) =>{
-
-        setTimeout(() =>{
-
-           resolve(`Username: ${userEmail} and password: ${userpassword}`);
-        },2000)
-    });
-
-}
+//     },3000);
+// });
 
 
 
+// function getAlluser(userEmail,userpassword)
+// {
 
-getAlluser('Elnino','Yalloande@1963').then(result =>{
+//     return new Promise((resolve,reject) =>{
+
+//         setTimeout(() =>{
+
+//            resolve(`Username: ${userEmail} and password: ${userpassword}`);
+//         },2000)
+//     });
+
+// }
+
+
+
+
+// getAlluser('Elnino','Yalloande@1963').then(result =>{
 
     
-    console.log(result);
+//     console.log(result);
 
-}).catch(error =>{
+// }).catch(error =>{
 
-    console.warn("There was an error while trying to get the data");
-})
+//     console.warn("There was an error while trying to get the data");
+// })
 
-.finally(() =>{
+// .finally(() =>{
 
-    setTimeout(() => {
+//     setTimeout(() => {
         
-        console.log("This is great practice");
+//         console.log("This is great practice");
 
-    },3000);
+//     },3000);
+// });
+
+
+
+// function moneymanagement()
+// {
+//     return new Promise((resolve, reject) => {
+        
+//         setTimeout(() =>{
+
+//             resolve("I am doing very well ");
+
+//         });
+
+//     })
+// }
+
+const fb = new Promise((resolve,reject) =>{
+
+    setTimeout(() =>{
+
+        console.log('We gonna log into our facebook account');
+       resolve('Facebook');
+    },2000);
+
+});
+
+const youtube = new Promise((resolve,reject) =>{
+
+    setTimeout(() =>{
+
+        console.log('i am going to log into my youtube account');
+        resolve('Youtube');
+    },5000);
+
+});
+
+
+Promise.all([fb,youtube]).then(result =>{
+
+    setTimeout(() =>{
+
+        result.forEach(res =>{
+
+            setTimeout(() =>{
+
+                console.log(res);
+            },2000);
+        });
+
+    },2000);
 });
