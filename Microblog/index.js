@@ -17,14 +17,17 @@ let x = 0;
 
 headers.forEach(myheader =>{
 
-    myheader.style.color ="white";   
-    myheader.style.backgroundColor = "black";
-    myheader.style.borderRadius = "5px";
+    myheader.style.color ="black";   
+    myheader.style.backgroundColor = "lightGray";
+    myheader.style.borderRadius = "2px";
     myheader.style.fontSize = "2rem"
     myheader.style.padding = "10px";
-
-
 });
+
+const h1 = document.getElementsByTagName("h1");
+
+console.log(h1);
+
 
 
 
