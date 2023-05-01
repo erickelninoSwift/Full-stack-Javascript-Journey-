@@ -129,8 +129,16 @@ const jsonData = JSON.stringify(users);
 
 console.log(jsonData);
 
-const storedData = localStorage.setItem("Key",`${jsonData}`);
+const storedData = localStorage.setItem("jason",`${jsonData}`);
 
-const getStoredData = localStorage.getItem("key");
+const getStoredData = localStorage.getItem("jason");
 
 console.log(JSON.parse(getStoredData));
+
+
+//  session Storage
+
+sessionStorage.setItem("Myname","Eriick Elnino");
+const getname = sessionStorage.getItem("Myname");
+
+console.log(getname);
