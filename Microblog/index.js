@@ -53,7 +53,7 @@ const createSpan = document.createElement("span");
 
 
 crerateTd.className ='post';
-crerateTd.innerHTML = "Post 6";
+crerateTd.innerText = "Post 6";
 createSpan.className = "fa fa-times float-right pr-3";
 
 
@@ -68,3 +68,44 @@ console.log(createSpan);
 console.log(crerateTd)
 
 
+for(let index of allchild)
+{
+    index.addEventListener('click',(e) =>{
+        e.preventDefault = true;
+
+        console.log(index.textContent);
+
+    });
+}
+
+
+const clearButton = document.querySelector('.clear-post');
+
+clearButton.addEventListener('click', (e) =>{
+
+    e.preventDefault = true;
+
+    console.log('everything is cleared!!!');
+    console.log(tbody);
+    console.log(e.target.className);
+    console.log(e.clientY);
+    console.log(e.ctrlKey)
+    console.log(e.type)
+
+    e.target.style.backgroundColor = "black";
+    
+});
+
+
+// Local sorage
+
+console.log("Local Storage");
+
+localStorage.setItem("Name",'Eriik_Elnino');
+localStorage.setItem("Age",30);
+
+console.log(localStorage.getItem("Name"));
+
+const age = localStorage.getItem("Age");
+
+console.log(`My age is ${age}`);
