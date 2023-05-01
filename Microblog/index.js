@@ -109,3 +109,28 @@ console.log(localStorage.getItem("Name"));
 const age = localStorage.getItem("Age");
 
 console.log(`My age is ${age}`);
+
+localStorage.setItem("Name","Jackpot");
+
+console.log(localStorage.getItem("Name"));
+
+localStorage.removeItem("Name");
+
+const users = [
+
+    {username: "Errik", age: 30},
+    {username: "Jackpot", age: 55},
+    {username: "Elnino", age: 70}
+];
+
+// console.log(users);
+
+const jsonData = JSON.stringify(users);
+
+console.log(jsonData);
+
+const storedData = localStorage.setItem("Key",`${jsonData}`);
+
+const getStoredData = localStorage.getItem("key");
+
+console.log(JSON.parse(getStoredData));
