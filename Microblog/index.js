@@ -36,10 +36,35 @@ const tbody = document.querySelector("tbody");
 
 const allchild = tbody.children;
 
+console.log(allchild);
+
 allchild[2].style.color = "red";
 
-for(let index of allchild)
-{
-    index.innerHTML = "<p>How are you doing today ?</p>";
-}
+// for(let index of allchild)
+// {
+//     index.innerHTML = "<p> <strong> How </strong> are you doing today ? </p>";
+//     index.style.color = "blue";
+// }
+
+const createTr = document.createElement("tr");
+const crerateTd = document.createElement("td");
+const Td = document.createElement("td");
+const createSpan = document.createElement("span");
+
+
+crerateTd.className ='post';
+crerateTd.innerHTML = "Post 6";
+createSpan.className = "fa fa-times float-right pr-3";
+
+
+Td.appendChild(createSpan);
+createTr.appendChild(crerateTd);
+createTr.appendChild(Td);
+
+
+tbody.appendChild(createTr);
+
+console.log(createSpan);
+console.log(crerateTd)
+
 
