@@ -48,22 +48,25 @@ buttonclick.addEventListener('mouseenter',(e) =>{
 });
 
 
+
+
 const buttonAdd = document.querySelector(".butto-add");
 const textData = document.querySelector(".text-input");
+
+
 const ul = document.querySelector("ul");
 const li = document.createElement("li");
 console.log(ul);
 
-buttonAdd.addEventListener('click',(e) =>{
+function checklegnth()
+{
+    return textData.value.length;
+}
 
-    e.preventDefault = true;
 
-    const ul = document.querySelector("ul");
-    const li = document.createElement("li");
-
-    if(textData.value.length > 0)
-    {
-        li.textContent = textData.value;
+function createListemelemt()
+{
+    li.textContent = textData.value;
 
         li.style.backgroundColor = "blue";
         li.style.color = "white";
@@ -86,6 +89,28 @@ buttonAdd.addEventListener('click',(e) =>{
             })
 
         ul.appendChild(li);
+        textData.value = "";
+        textData.ariaPlaceholder = "Enter text";
+
+}
+
+
+
+
+
+
+
+buttonAdd.addEventListener('click',(e) =>{
+
+    e.preventDefault = true;
+    
+    const ul = document.querySelector("ul");
+    const li = document.createElement("li");
+
+    if(checklegnth() > 0)
+    {
+        createListemelemt();
+        
     }else
     {
         console.log("No data please make sure you have entered real value");
@@ -94,6 +119,27 @@ buttonAdd.addEventListener('click',(e) =>{
 
 
 
+});
+
+
+
+
+
+
+
+textData.addEventListener('keypress',(e) =>{
+
+    e.preventDefault = true;
+    const ul = document.querySelector("ul");
+    const li = document.createElement("li");
+
+    if(checklegnth() > 0 && e.keyCode === 13)
+    {
+        createListemelemt();
+    }else
+    {
+        console.log("No data please make sure you have entered real value");
+    }
 });
 
 
