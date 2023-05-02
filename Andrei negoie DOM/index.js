@@ -30,7 +30,7 @@ for(let index of alllist)
     index.addEventListener('click', (e) =>{
 
         e.preventDefault = true;
-        console.log(index.textContent);
+     
     })
 }
 
@@ -55,7 +55,13 @@ const li = document.createElement("li");
 console.log(ul);
 
 buttonAdd.addEventListener('click',(e) =>{
+
     e.preventDefault = true;
+
+    const ul = document.querySelector("ul");
+    const li = document.createElement("li");
+
+
     textData.value !== "" ? li.textContent = textData.value : console.log("No data");
     ul.appendChild(li);
 
