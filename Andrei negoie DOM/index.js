@@ -61,32 +61,38 @@ buttonAdd.addEventListener('click',(e) =>{
     const ul = document.querySelector("ul");
     const li = document.createElement("li");
 
+    if(textData.value.length > 0)
+    {
+        li.textContent = textData.value;
 
-    textData.value !== "" ? li.textContent = textData.value : console.log("No data");
-    ul.appendChild(li);
+        li.style.backgroundColor = "blue";
+        li.style.color = "white";
+        li.style.margin = "2px";
+        li.style.fontSize = "10px"
+        li.style.height = "30px";
+        li.style.textAlign = "center";
+        li.style.width = "100px"
+        li.style.borderRadius = "5px";
+        li.style.display = "block";
+        li.style.marginTop = "auto";
+        
+            
+            
+        
+        li.addEventListener('click', (e) =>{
+        
+                e.preventDefault = true;
+                console.log(li.textContent);
+            })
 
-    for(let index of alllist)
-{
-    index.style.backgroundColor = "blue";
-    index.style.color = "white";
-    index.style.margin = "2px";
-    index.style.fontSize = "10px"
-    index.style.height = "30px";
-    index.style.textAlign = "center";
-    index.style.width = "100px"
-    index.style.borderRadius = "5px";
-    index.style.display = "block";
-    index.style.marginTop = "auto";
+        ul.appendChild(li);
+    }else
+    {
+        console.log("No data please make sure you have entered real value");
+    }
+  
 
-    
-    
 
-    index.addEventListener('click', (e) =>{
-
-        e.preventDefault = true;
-        console.log(index.textContent);
-    })
-}
 
 });
 
