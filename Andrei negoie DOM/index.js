@@ -116,9 +116,6 @@ buttonAdd.addEventListener('click',(e) =>{
         console.log("No data please make sure you have entered real value");
     }
   
-
-
-
 });
 
 
