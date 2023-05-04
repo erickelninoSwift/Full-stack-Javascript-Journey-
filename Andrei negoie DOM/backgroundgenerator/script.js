@@ -3,20 +3,25 @@ console.log("Gradient");
 
 const color1 = document.querySelector("#color1");
 const color2 = document.querySelector("#color2");
+const css = document.querySelector("h3");
+const body = document.querySelector("body");
 
-// console.log(color1);
-// console.log(color2);
+console.log(body);
 
-color1.addEventListener('mouseover', (e) =>{
+console.log(css);
+console.log(color1);
+console.log(color2);
+// background: linear-gradient(to right, red , yellow);
 
-	e.preventDefault = true;
-	console.log(e.target.value);
-})
+function myEvent(event)
+{
+	event.preventDefault = true;
+	body.style.background = `linear-gradient(to right ,${color1.value},${color2.value})`;
+}
 
-color2.addEventListener('mouseover', (e) =>{
 
-	e.preventDefault = true;
-	console.log(e.target.value);
-})
+color1.addEventListener('input', myEvent);
+
+color2.addEventListener('input',myEvent);
 
 
