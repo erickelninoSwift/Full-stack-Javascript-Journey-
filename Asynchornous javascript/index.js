@@ -175,30 +175,4 @@ async function getDatagithub()
 
 }
 
-getDatagithub();
 
-
-const myonwPromis = new Promise((resolve, reject) =>{
-
-    const getAlldataNow = fetch('https://cat-fact.herokuapp.com/facts');
-
-    const jsondata = getAlldataNow.json();
-
-    setTimeout(() =>{
-
-       resolve(jsondata);
-       
-
-    },2000);
-
-});
-
-myonwPromis.then(result =>{
-
-    console.log(result);
-})
-.catch(erro =>{
-
-console.warn(erro);
-
-});
